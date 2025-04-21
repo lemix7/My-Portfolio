@@ -24,14 +24,14 @@ const HeroText = () => {
         opacity: 1,
         duration: 1,
         stagger: 0.2,
-        ease: "power1.out",
+        ease: "power3.out",
         delay: 0,
       });
 
       gsap.fromTo(
         boxRef.current,
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: "power1.out", delay: 1.3 }
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 1.3 }
       );
     },
     { scope: container }
