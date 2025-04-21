@@ -24,7 +24,7 @@ const NavBarDesktop = () => {
   //   );
   // })
 
-  return (
+  return ( 
     <nav ref={navRef} className=" hidden lg:flex w-full   items-center ">
       <div className=" w-full flex justify-between items-center  text-xl capitalize ">
         <div></div>
