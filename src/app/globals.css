@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+/**
+* @license
+*
+* Font Family: Melodrama
+* Designed by: Shaily Patel
+* URL: https://www.fontshare.com/fonts/melodrama
+* © 2025 Indian Type Foundry
+*
+* Melodrama Light 
+* Melodrama Regular 
+* Melodrama Medium 
+* Melodrama Semibold 
+* Melodrama Bold 
+* Melodrama Variable (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Melodrama-Light';
+  src: url('../fonts/Melodrama-Light.woff2') format('woff2'),
+       url('../fonts/Melodrama-Light.woff') format('woff'),
+       url('../fonts/Melodrama-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Melodrama-Regular';
+  src: url('../fonts/Melodrama-Regular.woff2') format('woff2'),
+       url('../fonts/Melodrama-Regular.woff') format('woff'),
+       url('../fonts/Melodrama-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Melodrama-Medium';
+  src: url('../fonts/Melodrama-Medium.woff2') format('woff2'),
+       url('../fonts/Melodrama-Medium.woff') format('woff'),
+       url('../fonts/Melodrama-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Melodrama-Semibold';
+  src: url('../fonts/Melodrama-Semibold.woff2') format('woff2'),
+       url('../fonts/Melodrama-Semibold.woff') format('woff'),
+       url('../fonts/Melodrama-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Melodrama-Bold';
+  src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
+       url('../fonts/Melodrama-Bold.woff') format('woff'),
+       url('../fonts/Melodrama-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: 'Melodrama-Variable';
+  src: url('../fonts/Melodrama-Variable.woff2') format('woff2'),
+       url('../fonts/Melodrama-Variable.woff') format('woff'),
+       url('../fonts/Melodrama-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  color: #ffffff;
+  /* font-family: Arial, Helvetica, sans-serif; */
+
+}
+
+/* CSS (inside your global styles or Tailwind's custom layer) */
+@layer utilities {
+  .clip-square {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .Melodrama-regular{
+    font-family: Melodrama-Regular;
+  }
+
+  .Melodrama-Medium{
+    font-family: Melodrama-Medium;
+  }
+}
+
