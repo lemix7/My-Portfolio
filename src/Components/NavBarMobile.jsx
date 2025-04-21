@@ -111,7 +111,7 @@ const NavBarMobile = () => {
         element,
         { height: 0, y: -window.innerHeight },
         {
-          height: "100vh",
+          height: "100%",
           y: 0,
           duration: 1.5,
           ease: "power1.out",
@@ -149,14 +149,14 @@ const NavBarMobile = () => {
 
       <div
         ref={boxRef}
-        className="bg-black p-4 rounded fixed z-20 top-0 left-0 w-full"
+        className="bg-black p-4  rounded fixed z-20 top-0 left-0 w-full"
         style={{
           overflow: "hidden",
           height: 0,
           transform: `translateY(-100%)`,
         }}
       >
-        <div className="h-full flex flex-col justify-center items-center text-white relative">
+        <div className="h-full flex flex-col justify-center items-center  text-white relative">
          
           <div
             ref={linksRef}
@@ -201,7 +201,7 @@ const NavBarMobile = () => {
         </div>
 
 
-          <button onClick={toggleHeight} className="absolute bottom-4 left-1/2 transform -translate-x-1/2 p-2">
+          <button onClick={toggleHeight} className="absolute bottom-14 left-1/2 transform -translate-x-1/2 p-2">
               <X size={50} strokeWidth={1} />
             </button>
 
