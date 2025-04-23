@@ -151,7 +151,7 @@ const NavBarMobile = () => {
 
       <div
         ref={boxRef}
-        className=" p-4  bg-[##000] rounded fixed z-20 top-0 left-0 w-full"
+        className=" p-4  bg-[#000] rounded fixed z-20 top-0 left-0 w-full"
         style={{
           overflow: "hidden",
           height: 0,
